@@ -11,9 +11,9 @@ class Descriptor:
     def __init__(self, name):
         self.name = name
 
-    # When an instance is being called
-    # def __get__(self, instance, owner):
-    #     return instance.__dict__
+    # When an attribute is being called
+    def __get__(self, instance, owner):
+        return instance.__dict__
 
     # When an instance is being assigned to a value
     def __set__(self, instance, value):

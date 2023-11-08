@@ -4,6 +4,24 @@ __getattr__ is [only] invoked if the attribute is not defined in
 
 __getattribute__ is invoked before looking for the attribute in
  the object instance. It has precedence over __getattr__
+
+ setattr(object, name, value)
+
+ The setattr() function takes three parameters:
+
+    object - object whose attribute has to be set
+    name - attribute name
+    value - value given to the attribute
+
+getattr(object, name[, default])
+The above syntax is equivalent to:
+    object.name
+
+getattr() method takes multiple parameters:
+
+    object - object whose named attribute's value is to be returned
+    name - string that contains the attribute's name
+    default (Optional) - value that is returned when the named attribute is not found
 """
 
 
